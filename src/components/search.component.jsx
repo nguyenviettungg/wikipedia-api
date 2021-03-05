@@ -29,7 +29,7 @@ const Search = () => {
         clearTimeout(timeoutId);
       };
     }
-  }, [userInput]);
+  }, [userInput, results.length]);
 
   const renderedResults = results.map((result) => {
     return (
